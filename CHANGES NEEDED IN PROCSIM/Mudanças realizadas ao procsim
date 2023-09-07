@@ -1,0 +1,22 @@
+Mudanças realizadas ao procsim no decorrer do desenvolvimento da frontend:
+
+-CommunityManager
+	*Alterada a forma como é obtido o caminho final para ficheiros pós-otimização na função update_consumption_profiles_based_on_optimization (mudança na linha 211).
+	O método anterior assumia que as pastas inicial e final se encontravam dentro do mesmo diretório quando se copiava uma diretoria e ficheiros lá contidos da pasta inicial para a final.
+
+-CommunityManagerStrategy
+	*Função execute, à semelhança do MinimizeCostsPyomo, save_to_file é um argumento da função.
+	*Na função execute as variáveis placed_timeslots e second_placed_timeslots foram tornadas variáveis de classe.
+	Utilizadas para obter facilmente informação sobre os timeslots nas otimizações.
+
+-DataFromCSV
+	*Está concebido de modo a ler ficheiros .csv de dados solares obtidos pelo smile.
+	Talvez valha a pena implementá-lo como um módulo independente do atual DataFromCSV
+
+-MinimizeCostsPyomo
+	*Na função execute a variável placed_timeslots foi tornada variável de classe.
+	Utilizadas para obter facilmente informação sobre os timeslots nas otimizações.
+
+Nota:
+No antgen (ApplianceModel.py, linha 48) é montado um caminho e existem duas versões da montagem (uma está em comentário), a diferença é a explicitação da raiz "/" no inicio da string.
+Ao que sei ela não é explicitada em Windows e em Linux é (Mac deve ser igual, mas não verifiquei). Estou certo de que há uma maneira de automaticamente verificar o sistema operativo e usar a versão correta, mas não implementei.
