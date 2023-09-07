@@ -1,0 +1,170 @@
+/*Colour scheme:
+#353535 Darkest
+#4444444 Darker
+#4D4D4D Dark
+#535353 Medium
+#9E9E9E Light
+#F3F3F3 Lighter*/
+
+QWidget {
+	margin: 0px; /*Remove margins from all widgets*/
+}
+
+MainWindow {
+	background-color: #535353; /*MainWindow background to Medium*/
+}
+
+QToolBar {
+	background-color: #444444; /*SideBar colour to Darker*/
+}
+
+SideButton:disabled {
+    color: #9E9E9E;
+}
+
+SideButton:hover {
+    color: #FFFFFF; /*Button Text*/
+}
+
+QDialog {
+	background-color: #353535; /*Darkest*/
+}
+
+QComboBox {
+	background-color: #444444; /*Darker*/
+}
+
+QPushButton {
+	color: #F3F3F3; /*Button text to Lighter*/
+	background-color: #353535; /*Darkest colour*/
+}
+
+QPushButton:hover {
+	background-color: #444444; /*Darker when hovering*/
+}
+
+QPushButton:pressed {
+	background-color: #353535; /*Darkest when pressed (it's noticeabilly different from normal)*/
+}
+
+QTabWidget {
+    background-color: #535353; /*Medium background*/
+}
+
+QTabWidget::tab-bar {
+    background-color: #444444; /*Darker tab bar*/
+}
+
+QTabBar::tab:selected {
+    background-color: #4D4D4D; /*Dark selected tab */
+    color: #F3F3F3; /*Lighter text*/
+}
+
+QTabBar::tab:hover {
+    background-color: #535353; /*Medium hover tab*/
+}
+
+QTabBar::tab {
+    background-color: #353535; /*Darkest*/
+}
+
+QLineEdit {
+	background-color: #353535; /*Darkest*/
+}
+
+/*Apply custom styles to the QScrollArea*/
+QScrollArea {
+    /*Set the background color of the QScrollArea */
+    background-color: #353535; /*Darkest*/
+
+    /*Set the color of the scroll bars*/
+    color: #444444; /*Darker*/
+}
+
+LineList {
+    /*Set the background to the same colour as the QScrollArea*/
+    background-color: #353535; /*Darkest*/
+}
+
+/*Apply custom styles to the vertical scroll bar*/
+QScrollBar:vertical {
+    /*Set the background color of the vertical scroll bar*/
+    background-color: #4D4D4D; /*Dark*/
+
+    /*Set the color of the handle (slider)*/
+    handle: {
+        background-color: #535353; /*Medium*/
+    }
+
+    /*Set the color of the arrow buttons*/
+    arrow-button: {
+        background-color: #535353; /*Medium*/
+    }
+}
+
+/*Apply custom styles to the horizontal scroll bar*/
+QScrollBar:horizontal {
+    /*Set the background color of the horizontal scroll bar*/
+    background-color: #4D4D4D; /*Dark*/
+
+    /*Set the color of the handle (slider)*/
+    handle: {
+        background-color: #535353; /*Medium*/
+    }
+
+    /*Set the color of the arrow buttons*/
+    arrow-button: {
+        background-color: #535353; /*Medium*/
+    }
+}
+
+/*Setting widget's buttons' sizes*/
+ParamWidget QPushButton {
+    min-width: 19px;
+    max-width: 19px;
+}
+ /*ParamWidget's labels*/
+QLabel#nameLab {
+    font-size: 16px;
+    qproperty-alignment: 'AlignCenter | AlignVCenter';
+}
+
+QLabel#folderLab {
+    font-size: 12px;
+    qproperty-alignment: 'AlignRight | AlignTop';
+}
+
+QLabel#houseLab {
+    font-size: 12px;
+    qproperty-alignment: 'AlignLeft | AlignBottom';
+}
+
+InfoScreen QLabel{
+    font-size: 30px;
+}
+
+QSpinbox {
+    background-color: #444444;
+    color: #F3F3F3;
+}
+
+QSpinbox:disabled {
+    background-color: #353535;
+    color: #9E9E9E;
+    border: 1px solid #444444;
+}
+
+QSpinBox::lineedit:disabled {
+    background-color: #353535;
+    border: 1px solid #444444;
+}
+
+HomeMenu QPushButton {
+    font-size: 30px;
+}
+SimMenu QPushButton {
+    font-size: 30px;
+}
+OptimMenu QPushButton {
+    font-size: 30px;
+}

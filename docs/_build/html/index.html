@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to PROCSIM Running/Results Frontend’s documentation! &#8212; PROCSIM Running/Results Frontend 2023 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=a4664895"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-procsim-running-results-frontend-s-documentation">
+<h1>Welcome to PROCSIM Running/Results Frontend’s documentation!<a class="headerlink" href="#welcome-to-procsim-running-results-frontend-s-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<li><p><a class="reference internal" href="#note-anchor"><span class="std std-ref">Note on optimisation methods</span></a></p></li>
+</ul>
+</section>
+<section id="module-Main">
+<span id="modules"></span><h1>Modules<a class="headerlink" href="#module-Main" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Main.MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Main.</span></span><span class="sig-name descname"><span class="pre">MainWindow</span></span><a class="headerlink" href="#Main.MainWindow" title="Link to this definition">¶</a></dt>
+<dd><p>QMainWindow of this application</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.goToEcSim">
+<span class="sig-name descname"><span class="pre">goToEcSim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.goToEcSim" title="Link to this definition">¶</a></dt>
+<dd><p>Set EC Simulator as the central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the button was checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.goToHome">
+<span class="sig-name descname"><span class="pre">goToHome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.goToHome" title="Link to this definition">¶</a></dt>
+<dd><p>Set home screen as the central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the button was checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.goToOptim">
+<span class="sig-name descname"><span class="pre">goToOptim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.goToOptim" title="Link to this definition">¶</a></dt>
+<dd><p>Sets an EC Optimizer as the central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>idx</strong> – index of the selected optimisation method</p></li>
+<li><p><strong>checked</strong> – if the button was checked</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.goToOverview">
+<span class="sig-name descname"><span class="pre">goToOverview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.goToOverview" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the central widget to the Overview screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the button was checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.popupHelp">
+<span class="sig-name descname"><span class="pre">popupHelp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.popupHelp" title="Link to this definition">¶</a></dt>
+<dd><p>Show help window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.popupSettings">
+<span class="sig-name descname"><span class="pre">popupSettings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.popupSettings" title="Link to this definition">¶</a></dt>
+<dd><p>Show settings window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.setCommunityFile">
+<span class="sig-name descname"><span class="pre">setCommunityFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">communityFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.setCommunityFile" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the currently selected community json file.
+Changes the title of the window to contain the file name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>communityFile</strong> – path to the community json file to set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.MainWindow.severConnection">
+<span class="sig-name descname"><span class="pre">severConnection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Main.MainWindow.severConnection" title="Link to this definition">¶</a></dt>
+<dd><p>Disconnects the currentGraphConn if it exists</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Main.SideBar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Main.</span></span><span class="sig-name descname"><span class="pre">SideBar</span></span><a class="headerlink" href="#Main.SideBar" title="Link to this definition">¶</a></dt>
+<dd><p>Side bar widget</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.SideBar.setButtonsEnabled">
+<span class="sig-name descname"><span class="pre">setButtonsEnabled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.SideBar.setButtonsEnabled" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the enabled state of the side bar buttons</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>val</strong> – True or False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.SideBar.toggledBtn">
+<span class="sig-name descname"><span class="pre">toggledBtn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checked</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.SideBar.toggledBtn" title="Link to this definition">¶</a></dt>
+<dd><p>Emit a signal when an optimisation button has been toggled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>idx</strong> – index of the button toggled (equal to the index of the optimisation method)</p></li>
+<li><p><strong>checked</strong> – if the button is checked</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Main.SideButton">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Main.</span></span><span class="sig-name descname"><span class="pre">SideButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.SideButton" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for the buttons on the side bar</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label</strong> – label on the button</p></li>
+<li><p><strong>checkable</strong> – if the buttonis kept down after clicking</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Main.SideButton.sizeHint">
+<span class="sig-name descname"><span class="pre">sizeHint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Main.SideButton.sizeHint" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-Home">
+<dt class="sig sig-object py" id="Home.CommunitySelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">CommunitySelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">firstSelection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.CommunitySelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to select a community from the folder selected in the settings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>firstSelection</strong> – whether this is the first selection after opening the app, disabling the return to the HomeMenu</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.CommunitySelector.createFileList">
+<span class="sig-name descname"><span class="pre">createFileList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Home.CommunitySelector.createFileList" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a list with the paths to the json files in the json path folder in the settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.CommunitySelector.updateCommunitiesList">
+<span class="sig-name descname"><span class="pre">updateCommunitiesList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Home.CommunitySelector.updateCommunitiesList" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the list of community files.
+Used when the setting is changed while in this screen.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.CommunityWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">CommunityWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.CommunityWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Widget that represents a communtiy in the community selector.
+Contains a button to select it and information about which simulations and optimisations have been done on this community.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – path to the community</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.CustomBtn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">CustomBtn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.CustomBtn" title="Link to this definition">¶</a></dt>
+<dd><p>QPushButton with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label</strong> – text displayed on the button</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.CustomLab">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">CustomLab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.CustomLab" title="Link to this definition">¶</a></dt>
+<dd><p>QLabel with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – label text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.Home">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">Home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">community_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.Home" title="Link to this definition">¶</a></dt>
+<dd><p>Manages the Home Menu and Community Selector screens</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>community_file</strong> – path to the json of the community</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.Home.goToHomeMenu">
+<span class="sig-name descname"><span class="pre">goToHomeMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Home.Home.goToHomeMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the Home Menu as the central widget</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.Home.goToSelectCommunity">
+<span class="sig-name descname"><span class="pre">goToSelectCommunity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.Home.goToSelectCommunity" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the Community Selector as the central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fisrt</strong> – whether this is the first time selecting a community after starting the app</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.Home.selectCommunity">
+<span class="sig-name descname"><span class="pre">selectCommunity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Home.Home.selectCommunity" title="Link to this definition">¶</a></dt>
+<dd><p>Selects the community json file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – path to the selected community</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Home.Home.update">
+<span class="sig-name descname"><span class="pre">update</span></span><a class="headerlink" href="#Home.Home.update" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Home.Home.updateFolder">
+<span class="sig-name descname"><span class="pre">updateFolder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Home.Home.updateFolder" title="Link to this definition">¶</a></dt>
+<dd><p>Emits a signal informing the json folder has been updates</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.HomeMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">HomeMenu</span></span><a class="headerlink" href="#Home.HomeMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Widget with buttons to access the community selector and the screens from the side bar</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Home.OptimMethodSelect">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Home.</span></span><span class="sig-name descname"><span class="pre">OptimMethodSelect</span></span><a class="headerlink" href="#Home.OptimMethodSelect" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to select an optimisation window to switch to
+(automatically arranges the method from the Settings.optimizationNames tuple)</p>
+</dd></dl>
+
+<dl class="py class" id="module-ECSimulator">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ECSimulator.</span></span><span class="sig-name descname"><span class="pre">ECSimulator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jsonPath</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator" title="Link to this definition">¶</a></dt>
+<dd><p>Screen pertaining to energy community simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>jsonPath</strong> – path to the json of the community</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.goToResults">
+<span class="sig-name descname"><span class="pre">goToResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.goToResults" title="Link to this definition">¶</a></dt>
+<dd><p>Sets Result Screen as central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>days</strong> – number of days in the simulation we’re checking the results of</p></li>
+<li><p><strong>pj</strong> – path to the community’s json file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.goToSimMenu">
+<span class="sig-name descname"><span class="pre">goToSimMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.goToSimMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Sets Sim Menu as central widget</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.logSimulation">
+<span class="sig-name descname"><span class="pre">logSimulation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.logSimulation" title="Link to this definition">¶</a></dt>
+<dd><p>Creates or edits a file (if necessary) with the information on which amounts of days have been simulated using the current json file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>days</strong> – number of days in the current simulation</p></li>
+<li><p><strong>name</strong> – name of the community currently in use</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.simulate">
+<span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.simulate" title="Link to this definition">¶</a></dt>
+<dd><p>Simulate Energy Community</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.warnNoCommunity">
+<span class="sig-name descname"><span class="pre">warnNoCommunity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.warnNoCommunity" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECSimulator.ECSimulator.warnNotSimulated">
+<span class="sig-name descname"><span class="pre">warnNotSimulated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECSimulator.ECSimulator.warnNotSimulated" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-ECOptimizer">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ECOptimizer.</span></span><span class="sig-name descname"><span class="pre">ECOptimizer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optimMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jsonPath</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer" title="Link to this definition">¶</a></dt>
+<dd><p>Screen pertaining to energy community optimisation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>jsonPath</strong> – path to the json of the community</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.goToOptimMenu">
+<span class="sig-name descname"><span class="pre">goToOptimMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.goToOptimMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Sets Optim Menu as central widget</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.goToResults">
+<span class="sig-name descname"><span class="pre">goToResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.goToResults" title="Link to this definition">¶</a></dt>
+<dd><p>Sets Result Screen as central widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>days</strong> – number of days in the simulation we’re checking the results of</p></li>
+<li><p><strong>pj</strong> – path to the community’s json file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.optimize">
+<span class="sig-name descname"><span class="pre">optimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.optimize" title="Link to this definition">¶</a></dt>
+<dd><p>Optimise Energy Community</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.warnNoCommunity">
+<span class="sig-name descname"><span class="pre">warnNoCommunity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.warnNoCommunity" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.warnNotOptimized">
+<span class="sig-name descname"><span class="pre">warnNotOptimized</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.warnNotOptimized" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ECOptimizer.ECOptimizer.warnNotSimulated">
+<span class="sig-name descname"><span class="pre">warnNotSimulated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ECOptimizer.ECOptimizer.warnNotSimulated" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-Help">
+<dt class="sig sig-object py" id="Help.Help">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">Help</span></span><a class="headerlink" href="#Help.Help" title="Link to this definition">¶</a></dt>
+<dd><p>Dialog with help</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Help.Help.resizeEvent">
+<span class="sig-name descname"><span class="pre">resizeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Help.Help.resizeEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Help.Help.sizeHint">
+<span class="sig-name descname"><span class="pre">sizeHint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Help.Help.sizeHint" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpHome">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpHome</span></span><a class="headerlink" href="#Help.HelpHome" title="Link to this definition">¶</a></dt>
+<dd><p>Information about the Home screen</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpOptim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpOptim</span></span><a class="headerlink" href="#Help.HelpOptim" title="Link to this definition">¶</a></dt>
+<dd><p>Information about the EC Optimizer</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpOverview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpOverview</span></span><a class="headerlink" href="#Help.HelpOverview" title="Link to this definition">¶</a></dt>
+<dd><p>Information about the Overview screen</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpProcsim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpProcsim</span></span><a class="headerlink" href="#Help.HelpProcsim" title="Link to this definition">¶</a></dt>
+<dd><p>Information about what’s PROCSIM</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpSim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpSim</span></span><a class="headerlink" href="#Help.HelpSim" title="Link to this definition">¶</a></dt>
+<dd><p>Information about the EC Simulator</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.HelpWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">HelpWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Help.HelpWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Base widget to use when creating tabs with help</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of the tabs that will contain this HelpWidget</p></li>
+<li><p><strong>labels</strong> – list of QLabels to display</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelCommunities">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelCommunities</span></span><a class="headerlink" href="#Help.LabelCommunities" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the selection of Communities</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelCustomGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelCustomGraph</span></span><a class="headerlink" href="#Help.LabelCustomGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the Custom Graph</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelHome">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelHome</span></span><a class="headerlink" href="#Help.LabelHome" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the Home Menu</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelOptim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelOptim</span></span><a class="headerlink" href="#Help.LabelOptim" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the Optimizer</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelOptimOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelOptimOptions</span></span><a class="headerlink" href="#Help.LabelOptimOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the optimisation options</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelProcsim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelProcsim</span></span><a class="headerlink" href="#Help.LabelProcsim" title="Link to this definition">¶</a></dt>
+<dd><p>Label about PROCSIM</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelResults">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Help.LabelResults" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the Result Screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>source</strong> – string related to which tab this Label is being shown in (e.g. Simulator, Optimizer, etc.)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelSim">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelSim</span></span><a class="headerlink" href="#Help.LabelSim" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the Simulator</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Help.LabelSimOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Help.</span></span><span class="sig-name descname"><span class="pre">LabelSimOptions</span></span><a class="headerlink" href="#Help.LabelSimOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Label about the simulation options</p>
+</dd></dl>
+
+<dl class="py class" id="module-Settings">
+<dt class="sig sig-object py" id="Settings.CSVFileSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Settings.</span></span><span class="sig-name descname"><span class="pre">CSVFileSelector</span></span><a class="headerlink" href="#Settings.CSVFileSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for selecting a CSV file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.CSVFileSelector.chooseFile">
+<span class="sig-name descname"><span class="pre">chooseFile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.CSVFileSelector.chooseFile" title="Link to this definition">¶</a></dt>
+<dd><p>Open a QFileDialog to choose the file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.CSVFileSelector.setPath">
+<span class="sig-name descname"><span class="pre">setPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.CSVFileSelector.setPath" title="Link to this definition">¶</a></dt>
+<dd><p>Set the path that was selected</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – selected path</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Settings.FolderSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Settings.</span></span><span class="sig-name descname"><span class="pre">FolderSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.FolderSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for selecting a folder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>default</strong> – default folder</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.FolderSelector.chooseDir">
+<span class="sig-name descname"><span class="pre">chooseDir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.FolderSelector.chooseDir" title="Link to this definition">¶</a></dt>
+<dd><p>Open a QFileDialog to choose the directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.FolderSelector.defaultToggled">
+<span class="sig-name descname"><span class="pre">defaultToggled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.FolderSelector.defaultToggled" title="Link to this definition">¶</a></dt>
+<dd><p>Action of the ‘default’ checkbox, select the default path if checked, enable path selection if not</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the check box is checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.FolderSelector.setPath">
+<span class="sig-name descname"><span class="pre">setPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.FolderSelector.setPath" title="Link to this definition">¶</a></dt>
+<dd><p>Set the path that was selected</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – selected path</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.FolderSelector.uncheck">
+<span class="sig-name descname"><span class="pre">uncheck</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.FolderSelector.uncheck" title="Link to this definition">¶</a></dt>
+<dd><p>Unchecks the ‘default’ check box</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Settings.Settings">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Settings.</span></span><span class="sig-name descname"><span class="pre">Settings</span></span><a class="headerlink" href="#Settings.Settings" title="Link to this definition">¶</a></dt>
+<dd><p>Dialog to change the application Settings and manager of other settings set outside of this window
+Settings changed in this window:
+- JSON folder path
+- Output folder path
+- Solar data CSV file path</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.cancel" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the window without saving the new settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.findInFile">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">findInFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.findInFile" title="Link to this definition">¶</a></dt>
+<dd><p>Finds the value of a setting in the settings file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label</strong> – label (‘foo=’) that identifies the wanted setting</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getDays">
+<span class="sig-name descname"><span class="pre">getDays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>last setting of the number of days to simulate option</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getJsonPath">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getJsonPath</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getJsonPath" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the path to the folder containg the json files</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getOutputPath">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getOutputPath</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getOutputPath" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the path to the output folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getOutputPaths">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getOutputPaths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">community_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">days</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optim_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getOutputPaths" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>community_name</strong> – name of the community json file is in use (without .json extension)</p></li>
+<li><p><strong>days</strong> – number of simulated days</p></li>
+<li><p><strong>optim_method</strong> – optimisation method in use</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>tuple of the paths used to run a simulation with the set optimisation method
+[0] path of the consumption profiles generated by ANTGen (at 1 Hz)
+[1] path of the resampled consumption profiles (at 1/60Hz)
+[2] path of the consumption profiles after the 1st step of the optimization
+[3] path of the consumption profiles after the 2nd step of the optimization</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getPVData">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getPVData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getPVData" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the path to the solar data CSV file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getSkipCg">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getSkipCg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getSkipCg" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>last setting of the Skip Consumption Generator option</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.getlocalPV">
+<span class="sig-name descname"><span class="pre">getlocalPV</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.getlocalPV" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>last setting of the Use Local Lolar Data option</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.loadConfig">
+<span class="sig-name descname"><span class="pre">loadConfig</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.loadConfig" title="Link to this definition">¶</a></dt>
+<dd><p>Read saved settings and load them to be shown in the window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.optimizationNames">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">optimizationNames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.optimizationNames" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple containing the names of the available optimisation methods</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.save" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the selected settings and closes the window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Settings.Settings.sizeHint">
+<span class="sig-name descname"><span class="pre">sizeHint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Settings.Settings.sizeHint" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-SimMenu">
+<dt class="sig sig-object py" id="SimMenu.CustomBtn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">SimMenu.</span></span><span class="sig-name descname"><span class="pre">CustomBtn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.CustomBtn" title="Link to this definition">¶</a></dt>
+<dd><p>QPushButton with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label</strong> – text displayed on the button</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="SimMenu.CustomLab">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">SimMenu.</span></span><span class="sig-name descname"><span class="pre">CustomLab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.CustomLab" title="Link to this definition">¶</a></dt>
+<dd><p>QLabel with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – label text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="SimMenu.SimMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">SimMenu.</span></span><span class="sig-name descname"><span class="pre">SimMenu</span></span><a class="headerlink" href="#SimMenu.SimMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Screen with the menu to start a simulation using PROCSIM
+Contains community file selector, start simulation button, simulation options and show results button</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimMenu.getDays">
+<span class="sig-name descname"><span class="pre">getDays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimMenu.getDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>number of days to simulate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimMenu.loadOptions">
+<span class="sig-name descname"><span class="pre">loadOptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimMenu.loadOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Load previously used options</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimMenu.saveOptions">
+<span class="sig-name descname"><span class="pre">saveOptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimMenu.saveOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Saves used options</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimMenu.skipCg">
+<span class="sig-name descname"><span class="pre">skipCg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimMenu.skipCg" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if Consumption Generator should be skipped</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimMenu.useLocalPV">
+<span class="sig-name descname"><span class="pre">useLocalPV</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimMenu.useLocalPV" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if local solar data should be used</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="SimMenu.SimOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">SimMenu.</span></span><span class="sig-name descname"><span class="pre">SimOptions</span></span><a class="headerlink" href="#SimMenu.SimOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for selection of the simulation options:
+-number of days to simulate
+-whether to skip Consumption Generator
+-whether to skip Renewable Energy Generator
+-whether to use local solar data</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimOptions.cgToggled">
+<span class="sig-name descname"><span class="pre">cgToggled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimOptions.cgToggled" title="Link to this definition">¶</a></dt>
+<dd><p>Keeps the settings consistent with the skipCg state.
+Now unused. Add clauses if conflicting settings are added</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the check box is checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimOptions.getDays">
+<span class="sig-name descname"><span class="pre">getDays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimOptions.getDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>number of days to simulate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimOptions.localPVToggled">
+<span class="sig-name descname"><span class="pre">localPVToggled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">checked</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimOptions.localPVToggled" title="Link to this definition">¶</a></dt>
+<dd><p>Keeps the settings consistent.
+Checks if the path in the settings is valid and warns if it is not when trying to use it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>checked</strong> – if the check box is checked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimOptions.skipCg">
+<span class="sig-name descname"><span class="pre">skipCg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimOptions.skipCg" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if Consumption Generator should be skipped</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="SimMenu.SimOptions.useLocalPV">
+<span class="sig-name descname"><span class="pre">useLocalPV</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SimMenu.SimOptions.useLocalPV" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if local solar data should be used</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-OptimMenu">
+<dt class="sig sig-object py" id="OptimMenu.CustomBtn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OptimMenu.</span></span><span class="sig-name descname"><span class="pre">CustomBtn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.CustomBtn" title="Link to this definition">¶</a></dt>
+<dd><p>QPushButton with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>label</strong> – text displayed on the button</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="OptimMenu.CustomLab">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OptimMenu.</span></span><span class="sig-name descname"><span class="pre">CustomLab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.CustomLab" title="Link to this definition">¶</a></dt>
+<dd><p>QLabel with custom size policy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – label text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="OptimMenu.OptimMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OptimMenu.</span></span><span class="sig-name descname"><span class="pre">OptimMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optimMethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">communityFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.OptimMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Screen with the menu to start an optimulation using PROCSIM
+Contains community file selector, start optimisation button, optimisation options and show results button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>communityFile</strong> – path to the community json file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="OptimMenu.OptimMenu.getDays">
+<span class="sig-name descname"><span class="pre">getDays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.OptimMenu.getDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>number of days to simulate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="OptimMenu.OptimMenu.loadOptions">
+<span class="sig-name descname"><span class="pre">loadOptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.OptimMenu.loadOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Load previously used options</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="OptimMenu.SimOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">OptimMenu.</span></span><span class="sig-name descname"><span class="pre">SimOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">communityFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.SimOptions" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for selection of the simulation options:
+-number of days of the simulation to optimise</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>communityFile</strong> – path to the community json file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="OptimMenu.SimOptions.getDays">
+<span class="sig-name descname"><span class="pre">getDays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.SimOptions.getDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>number of days to simulate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="OptimMenu.SimOptions.setDays">
+<span class="sig-name descname"><span class="pre">setDays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#OptimMenu.SimOptions.setDays" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the days combo box to the given value if it is found
+If it is not found defaults to the first option in the combobox</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>days</strong> – number of days to optimise</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-ResultScreen">
+<dt class="sig sig-object py" id="ResultScreen.DefaultGraphs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ResultScreen.</span></span><span class="sig-name descname"><span class="pre">DefaultGraphs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backButton</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.DefaultGraphs" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to show pre selected graphs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paths</strong> – dictionary with relevant paths</p></li>
+<li><p><strong>backButton</strong> – whether to create a button to return to the last screen (useful when arriving at the default graphs from the simulation or optimisation screen)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ResultScreen.GraphCreator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ResultScreen.</span></span><span class="sig-name descname"><span class="pre">GraphCreator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.GraphCreator" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to enabled creation of graphs form the created CSV files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ResultScreen.Overview">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ResultScreen.</span></span><span class="sig-name descname"><span class="pre">Overview</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">communityFile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to show every result of the given community.
+Every simulation will be in a tab identified by the number of simulated days.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>communityFile</strong> – path to the json file of the community in use</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.Overview.createResScreen">
+<span class="sig-name descname"><span class="pre">createResScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview.createResScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a ResultScreen using the community file stored in the object and the number of days simulated</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>days</strong> – number of days in the simulation the ResultScreen being created pertains to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.Overview.initTabs">
+<span class="sig-name descname"><span class="pre">initTabs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview.initTabs" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the tabs os the ResultScreen in the given index</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – index of the ResultScreen</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.Overview.setTabByDay">
+<span class="sig-name descname"><span class="pre">setTabByDay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">day</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview.setTabByDay" title="Link to this definition">¶</a></dt>
+<dd><p>Selects the tab which refferences the given days</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>day</strong> – the number of days in the simulation to open the tab of</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.Overview.showEvent">
+<span class="sig-name descname"><span class="pre">showEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview.showEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override of the parent method to open the tab corresponding to the last day used upon showing the widget</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.Overview.warnNotSimulated">
+<span class="sig-name descname"><span class="pre">warnNotSimulated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.Overview.warnNotSimulated" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning no community’s been selected</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ResultScreen.ResultScreen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ResultScreen.</span></span><span class="sig-name descname"><span class="pre">ResultScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delayCreation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.ResultScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Tab widget containing two tabs with results from the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paths</strong> – dictionary with relevant paths</p></li>
+<li><p><strong>delayCreation</strong> – whether to create tabs on init (used so it doesn’t load graphs unnecessarily)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.ResultScreen.createTabs">
+<span class="sig-name descname"><span class="pre">createTabs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.ResultScreen.createTabs" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the tabs of this widget. DefaultGraphs and GraphCreator</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ResultScreen.ResultScreen.resizeEvent">
+<span class="sig-name descname"><span class="pre">resizeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ResultScreen.ResultScreen.resizeEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-ClickableGraph">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ClickableGraph.</span></span><span class="sig-name descname"><span class="pre">ClickableGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholderText</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.125</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.11</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph" title="Link to this definition">¶</a></dt>
+<dd><p>FigureCanvas widget capable of being clicked to show the graph in a popup window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent</strong> – parent widget</p></li>
+<li><p><strong>width</strong> – width of the figure</p></li>
+<li><p><strong>height</strong> – height of the figure</p></li>
+<li><p><strong>dpi</strong> – dpi of the figure</p></li>
+<li><p><strong>placeholderText</strong> – text to be displayed in the canvas before determining the final figure</p></li>
+<li><p><strong>left</strong> – size of the left margin</p></li>
+<li><p><strong>right</strong> – size of the right margin</p></li>
+<li><p><strong>top</strong> – size of the top margin</p></li>
+<li><p><strong>bottom</strong> – size of the bottom margin</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.change">
+<span class="sig-name descname"><span class="pre">change</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.change" title="Link to this definition">¶</a></dt>
+<dd><p>test method to change between two graphs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.closeFigure">
+<span class="sig-name descname"><span class="pre">closeFigure</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.closeFigure" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the matplotlib figure</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.enableClicks">
+<span class="sig-name descname"><span class="pre">enableClicks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.enableClicks" title="Link to this definition">¶</a></dt>
+<dd><p>Enables the graph to be clicked</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.enterEvent">
+<span class="sig-name descname"><span class="pre">enterEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.enterEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override parent method to change mouse cursor</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.graf1">
+<span class="sig-name descname"><span class="pre">graf1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.graf1" title="Link to this definition">¶</a></dt>
+<dd><p>test method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>sample graph</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.leaveEvent">
+<span class="sig-name descname"><span class="pre">leaveEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.leaveEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override parent method to change mouse cursor</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.mousePressEvent">
+<span class="sig-name descname"><span class="pre">mousePressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.mousePressEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method to open popup on click</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.openCanvasWindow">
+<span class="sig-name descname"><span class="pre">openCanvasWindow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.openCanvasWindow" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the graph in a popup window</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.showGraphFromDf">
+<span class="sig-name descname"><span class="pre">showGraphFromDf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.showGraphFromDf" title="Link to this definition">¶</a></dt>
+<dd><p>Show a graph in the canvas from a dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> – dataframe to use</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.showGraphFromFigure">
+<span class="sig-name descname"><span class="pre">showGraphFromFigure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fig</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.showGraphFromFigure" title="Link to this definition">¶</a></dt>
+<dd><p>Show a graph in the canvas from a matplotlib figure</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fig</strong> – figure to use</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.sizeHint">
+<span class="sig-name descname"><span class="pre">sizeHint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.sizeHint" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.ClickableGraph.spoofResize">
+<span class="sig-name descname"><span class="pre">spoofResize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.ClickableGraph.spoofResize" title="Link to this definition">¶</a></dt>
+<dd><p>Simulates a resize event</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ClickableGraph.CustomGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ClickableGraph.</span></span><span class="sig-name descname"><span class="pre">CustomGraph</span></span><a class="headerlink" href="#ClickableGraph.CustomGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Graph intended to receive dataframes and is able to show the totals of those dataframes’ columns</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.CustomGraph.dfToTotal">
+<span class="sig-name descname"><span class="pre">dfToTotal</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomGraph.dfToTotal" title="Link to this definition">¶</a></dt>
+<dd><p>Show a bar graph in the canvas by summing the values of each column of the current dataframe</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.CustomGraph.mousePressEvent">
+<span class="sig-name descname"><span class="pre">mousePressEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomGraph.mousePressEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Check for opening the graph popup or to change to total bar graph</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.CustomGraph.openCanvasWindow">
+<span class="sig-name descname"><span class="pre">openCanvasWindow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomGraph.openCanvasWindow" title="Link to this definition">¶</a></dt>
+<dd><p>Overrides parent method.
+Shows the graph in a popup window with class dedicated to custom graphs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.CustomGraph.showGraphFromDf">
+<span class="sig-name descname"><span class="pre">showGraphFromDf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomGraph.showGraphFromDf" title="Link to this definition">¶</a></dt>
+<dd><p>Overrides the superclass’s function.
+Adds whiping of the prior graph from memory and saves values unique to this class</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ClickableGraph.CustomPopupGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ClickableGraph.</span></span><span class="sig-name descname"><span class="pre">CustomPopupGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataframe</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomPopupGraph" title="Link to this definition">¶</a></dt>
+<dd><p>QDialog containing a canvas with a figure to show and a button to save it as a file
+Adds ability to save graphs to csv files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>canvas</strong> – FigureCanvas to show</p></li>
+<li><p><strong>dataframe</strong> – dataframe of the graph being shown (to save to csv if needed)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.CustomPopupGraph.openFolderDialog">
+<span class="sig-name descname"><span class="pre">openFolderDialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.CustomPopupGraph.openFolderDialog" title="Link to this definition">¶</a></dt>
+<dd><p>Opens QFileDialog to select the path to save the file to
+Capable of saving the CustomGraph’s dataframe to a csv file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ClickableGraph.PopupGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ClickableGraph.</span></span><span class="sig-name descname"><span class="pre">PopupGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">canvas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.PopupGraph" title="Link to this definition">¶</a></dt>
+<dd><p>QDialog containing a canvas with a figure to show and a button to save it as a file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>canvas</strong> – FigureCanvas to show</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.PopupGraph.openFolderDialog">
+<span class="sig-name descname"><span class="pre">openFolderDialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.PopupGraph.openFolderDialog" title="Link to this definition">¶</a></dt>
+<dd><p>Opens QFileDialog to select the path to save the file to</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ClickableGraph.PopupGraph.spoofResize">
+<span class="sig-name descname"><span class="pre">spoofResize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ClickableGraph.PopupGraph.spoofResize" title="Link to this definition">¶</a></dt>
+<dd><p>Simulates a resize event</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-ProcsimGraphs">
+<dt class="sig sig-object py" id="ProcsimGraphs.BaseloadGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">BaseloadGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">community</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.BaseloadGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Graph of the baseload taken from PROCSIM’s ConsumptionGenerator for each optimisation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>community</strong> – reading of the community’s json file</p></li>
+<li><p><strong>min_folder</strong> – path of the resampled consumption profiles (at 1/60Hz)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.BaseloadGraph.set_community_baseload_graph">
+<span class="sig-name descname"><span class="pre">set_community_baseload_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.BaseloadGraph.set_community_baseload_graph" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the graph of the baseload for each optimisation</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimGraphs.HouseGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">HouseGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">community</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.HouseGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Graph comparing a house’s consumption across different optimisations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paths</strong> – dictionary of relevant paths</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the community file</p></li>
+<li><p><strong>community</strong> – reading of the community’s json file</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.HouseGraph.set_house_total_graph">
+<span class="sig-name descname"><span class="pre">set_house_total_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.HouseGraph.set_house_total_graph" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the graph using the existing total.csv files of all optimisations</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimGraphs.PreloadedGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">PreloadedGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">left</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.125</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.11</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.PreloadedGraph" title="Link to this definition">¶</a></dt>
+<dd><p>FigureCanvas widget capable of being clicked to show the graph in a popup window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent</strong> – parent widget</p></li>
+<li><p><strong>width</strong> – width of the figure</p></li>
+<li><p><strong>height</strong> – height of the figure</p></li>
+<li><p><strong>dpi</strong> – dpi of the figure</p></li>
+<li><p><strong>placeholderText</strong> – text to be displayed in the canvas before determining the final figure</p></li>
+<li><p><strong>left</strong> – size of the left margin</p></li>
+<li><p><strong>right</strong> – size of the right margin</p></li>
+<li><p><strong>top</strong> – size of the top margin</p></li>
+<li><p><strong>bottom</strong> – size of the bottom margin</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.PreloadedGraph.buildPathName">
+<span class="sig-name descname"><span class="pre">buildPathName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.PreloadedGraph.buildPathName" title="Link to this definition">¶</a></dt>
+<dd><p>Build a dictionary with paths to simulation/optimisation folders associated with names to diplay for each one</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dicitonary of useful paths</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>name}, if any path was not provided in the argument, there will be a None key</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dictionary with paths and names {path</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimGraphs.SelfSufficiencyGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">SelfSufficiencyGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.SelfSufficiencyGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Graph comparing different optimisations’ self sufficiency and self consumption</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary of relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.SelfSufficiencyGraph.set_self_suf_graph">
+<span class="sig-name descname"><span class="pre">set_self_suf_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.SelfSufficiencyGraph.set_self_suf_graph" title="Link to this definition">¶</a></dt>
+<dd><p>Uses PROCSIM’s Evaluation module to calculate self sufficiency and self consumption across all optimisations that have files</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimGraphs.TimeslotsGraph">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">TimeslotsGraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">community</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.TimeslotsGraph" title="Link to this definition">¶</a></dt>
+<dd><p>Graph comparing different optimisations’ timeslot placement (only accounts for flexible appliances since every other is fixed)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary of relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.TimeslotsGraph.set_timeslots_graph">
+<span class="sig-name descname"><span class="pre">set_timeslots_graph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.TimeslotsGraph.set_timeslots_graph" title="Link to this definition">¶</a></dt>
+<dd><p>Creates graph comparing different optimisations’ timeslot placement</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimGraphs.Worker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimGraphs.</span></span><span class="sig-name descname"><span class="pre">Worker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.Worker" title="Link to this definition">¶</a></dt>
+<dd><p>Class to create graphs in a thread</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>func</strong> – funtion used to create the graph</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimGraphs.Worker.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimGraphs.Worker.run" title="Link to this definition">¶</a></dt>
+<dd><p>Create the graph</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-GraphParamSelector">
+<dt class="sig sig-object py" id="GraphParamSelector.CsvSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">CsvSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.CsvSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget with tabs enabling the selection of CSV from the simulation and outside of it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.CsvSelector.resizeEvent">
+<span class="sig-name descname"><span class="pre">resizeEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.CsvSelector.resizeEvent" title="Link to this definition">¶</a></dt>
+<dd><p>Override of parent method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">ExternalCsvSelector</span></span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to select the path to CSV files outside of the simulation</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector.btnOkClicked">
+<span class="sig-name descname"><span class="pre">btnOkClicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector.btnOkClicked" title="Link to this definition">¶</a></dt>
+<dd><p>Finishes the selection if all needed fields have been selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector.chooseFile">
+<span class="sig-name descname"><span class="pre">chooseFile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector.chooseFile" title="Link to this definition">¶</a></dt>
+<dd><p>Open a QFileDialog to choose the file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector.setOk">
+<span class="sig-name descname"><span class="pre">setOk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector.setOk" title="Link to this definition">¶</a></dt>
+<dd><p>Sets if the selection is ready to be finished</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>val</strong> – if it’s ok or not to finish</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector.setSelection">
+<span class="sig-name descname"><span class="pre">setSelection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector.setSelection" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the selection of the CSV</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – path to the selected CSV</p></li>
+<li><p><strong>col</strong> – name of the column of interest in the CSV file</p></li>
+<li><p><strong>idx</strong> – index to character of the path string where the file name begins</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ExternalCsvSelector.warnInvalidCsv">
+<span class="sig-name descname"><span class="pre">warnInvalidCsv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ExternalCsvSelector.warnInvalidCsv" title="Link to this definition">¶</a></dt>
+<dd><p>Shows a message box warning the CSV is invalid</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.GraphParamSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">GraphParamSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.GraphParamSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget for the creation of dataframes through the creation of multiple lines from the simulation’s CSV files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.GraphParamSelector.produceDf">
+<span class="sig-name descname"><span class="pre">produceDf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.GraphParamSelector.produceDf" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a dataframe containing the information of all the lines
+Returns the dataframe through a signal</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">InternalCsvSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to select the path of existing CSV files form the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.activityBuildPath">
+<span class="sig-name descname"><span class="pre">activityBuildPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.activityBuildPath" title="Link to this definition">¶</a></dt>
+<dd><p>Builds path when the focus is Activity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>name</strong> – name of the activity</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.activitySelected">
+<span class="sig-name descname"><span class="pre">activitySelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.activitySelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of the activity focus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.applianceBuildPath">
+<span class="sig-name descname"><span class="pre">applianceBuildPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.applianceBuildPath" title="Link to this definition">¶</a></dt>
+<dd><p>Builds path when the focus is Appliance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>name</strong> – name of the appliance</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.applianceSelected">
+<span class="sig-name descname"><span class="pre">applianceSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.applianceSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of the appliance focus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.btnOkClicked">
+<span class="sig-name descname"><span class="pre">btnOkClicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.btnOkClicked" title="Link to this definition">¶</a></dt>
+<dd><p>Finishes the selection if all needed fields have been selected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.communityFocusSelected">
+<span class="sig-name descname"><span class="pre">communityFocusSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">focus</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.communityFocusSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of a focus from the ‘Community’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.focusFileSelected">
+<span class="sig-name descname"><span class="pre">focusFileSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">focus</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.focusFileSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of a focus when the focus is directly a file
+i.e. Baseload or Total or Community files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.folderSelected">
+<span class="sig-name descname"><span class="pre">folderSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.folderSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of the folder containing the CSV
+:param folderName: name of the selected folder</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.houseFocusSelected">
+<span class="sig-name descname"><span class="pre">houseFocusSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">focus</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.houseFocusSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of a focus from a house folder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.houseSelected">
+<span class="sig-name descname"><span class="pre">houseSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.houseSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles the selection of the house containing the CSV</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house (‘Community’ for file not in a house folder)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.netloadBuildPath">
+<span class="sig-name descname"><span class="pre">netloadBuildPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.netloadBuildPath" title="Link to this definition">¶</a></dt>
+<dd><p>Builds the path when the focus is Netload</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>path</strong> – path to the netload.csv file</p></li>
+<li><p><strong>variable</strong> – name of the selected column</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.netloadSelected">
+<span class="sig-name descname"><span class="pre">netloadSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.netloadSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of the Netload focus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folderName</strong> – name of the selected folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.personBuildPath">
+<span class="sig-name descname"><span class="pre">personBuildPath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.personBuildPath" title="Link to this definition">¶</a></dt>
+<dd><p>Builds path when the focus is Persons</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>name</strong> – name of the person</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.personSelected">
+<span class="sig-name descname"><span class="pre">personSelected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseNo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.personSelected" title="Link to this definition">¶</a></dt>
+<dd><p>Handles selection of the person focus</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the selected folder</p></li>
+<li><p><strong>houseName</strong> – name of the selected house</p></li>
+<li><p><strong>houseNo</strong> – number of the house in the json file</p></li>
+<li><p><strong>focus</strong> – selected focus</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.setOk">
+<span class="sig-name descname"><span class="pre">setOk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.setOk" title="Link to this definition">¶</a></dt>
+<dd><p>Sets if the selection is ready to be finished</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>val</strong> – if it’s ok or not to finish</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.InternalCsvSelector.setSelection">
+<span class="sig-name descname"><span class="pre">setSelection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">house</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Community'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Power'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.InternalCsvSelector.setSelection" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the selection of the CSV</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the folder containing the selected CSV</p></li>
+<li><p><strong>name</strong> – name of the CSV</p></li>
+<li><p><strong>house</strong> – house folder of the file (‘Community’ if outside a house folder)</p></li>
+<li><p><strong>path</strong> – path selected</p></li>
+<li><p><strong>var</strong> – name of the selected column for CSVs with multiple columns</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.LineList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">LineList</span></span><a class="headerlink" href="#GraphParamSelector.LineList" title="Link to this definition">¶</a></dt>
+<dd><p>Widget containing widgets (LineWdiget or ParamWidget) in a vertical arrangement</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineList.addWidget">
+<span class="sig-name descname"><span class="pre">addWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineList.addWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Add a widget to the line list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>widget</strong> – widget to add</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">LineLister</span></span><a class="headerlink" href="#GraphParamSelector.LineLister" title="Link to this definition">¶</a></dt>
+<dd><p>Scroll Area to contain all the created lines</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister.addLine">
+<span class="sig-name descname"><span class="pre">addLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineLister.addLine" title="Link to this definition">¶</a></dt>
+<dd><p>Add a line to the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – name of the line</p></li>
+<li><p><strong>params</strong> – parameters that define the line</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister.countLines">
+<span class="sig-name descname"><span class="pre">countLines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineLister.countLines" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>number of lines in the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister.editLine">
+<span class="sig-name descname"><span class="pre">editLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineLister.editLine" title="Link to this definition">¶</a></dt>
+<dd><p>Request editing of a line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line</strong> – LineWidget to edit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister.getLines">
+<span class="sig-name descname"><span class="pre">getLines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineLister.getLines" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of all the LineWidgets</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineLister.removeLine">
+<span class="sig-name descname"><span class="pre">removeLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineLister.removeLine" title="Link to this definition">¶</a></dt>
+<dd><p>Remove a line from the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – index of the line on the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">LineSpecifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier" title="Link to this definition">¶</a></dt>
+<dd><p>Widget with the controls to create or edit LineWidgets from the CSVs of the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.addLine">
+<span class="sig-name descname"><span class="pre">addLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.addLine" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the controls to add a line</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.addParam">
+<span class="sig-name descname"><span class="pre">addParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.addParam" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a parameter to the ParamList</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the folder containing the CSV file</p></li>
+<li><p><strong>name</strong> – name of the CSV file</p></li>
+<li><p><strong>houseName</strong> – name of the house containing the CSV file</p></li>
+<li><p><strong>path</strong> – path to the CSV file</p></li>
+<li><p><strong>var</strong> – columns of interest of the CSV file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.cancel" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the parameter editor without saving</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.colapseDown">
+<span class="sig-name descname"><span class="pre">colapseDown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.colapseDown" title="Link to this definition">¶</a></dt>
+<dd><p>Hides the creation/editing controls</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.create">
+<span class="sig-name descname"><span class="pre">create</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.create" title="Link to this definition">¶</a></dt>
+<dd><p>Adds this line to the list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.createNew">
+<span class="sig-name descname"><span class="pre">createNew</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.createNew" title="Link to this definition">¶</a></dt>
+<dd><p>Shows the controls to create a line</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.delLine">
+<span class="sig-name descname"><span class="pre">delLine</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.delLine" title="Link to this definition">¶</a></dt>
+<dd><p>Removes the line</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.deleteAndReplaceLayout">
+<span class="sig-name descname"><span class="pre">deleteAndReplaceLayout</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">newLayout</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.deleteAndReplaceLayout" title="Link to this definition">¶</a></dt>
+<dd><p>Method to switch the layouts of the LineSpecifier</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>newLayout</strong> – the layout to switch to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.editLine">
+<span class="sig-name descname"><span class="pre">editLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.editLine" title="Link to this definition">¶</a></dt>
+<dd><p>Shows controls to edit the line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line</strong> – LineWidget to edit</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.hasChanged">
+<span class="sig-name descname"><span class="pre">hasChanged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.hasChanged" title="Link to this definition">¶</a></dt>
+<dd><p>Changes the value to signal the line has been edited</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.okCondition">
+<span class="sig-name descname"><span class="pre">okCondition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.okCondition" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>if it all the condition are met to create a line</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.popupCsvSelector">
+<span class="sig-name descname"><span class="pre">popupCsvSelector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.popupCsvSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Pops up the window for the selection of a CSV file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineSpecifier.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineSpecifier.save" title="Link to this definition">¶</a></dt>
+<dd><p>Saves changes made to the line while editing it</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">LineWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Widget that contains information about a created line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – name given to the line</p></li>
+<li><p><strong>params</strong> – list of parameters used to create the line</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.createDf">
+<span class="sig-name descname"><span class="pre">createDf</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.createDf" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dataframe from the lines parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.edit">
+<span class="sig-name descname"><span class="pre">edit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.edit" title="Link to this definition">¶</a></dt>
+<dd><p>Request editing of the line’s parameters</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.index" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>index of the line on the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.remove" title="Link to this definition">¶</a></dt>
+<dd><p>Request removal of the line form the list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.setLineName">
+<span class="sig-name descname"><span class="pre">setLineName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.setLineName" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the name of the line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> – name to set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.LineWidget.setParams">
+<span class="sig-name descname"><span class="pre">setParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.LineWidget.setParams" title="Link to this definition">¶</a></dt>
+<dd><p>Sets received the parameters on a list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>params</strong> – parameters to organise on the list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">ParamList</span></span><a class="headerlink" href="#GraphParamSelector.ParamList" title="Link to this definition">¶</a></dt>
+<dd><p>Scroll Area to contain all the created parameters</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList.addParam">
+<span class="sig-name descname"><span class="pre">addParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">houseName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negative</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamList.addParam" title="Link to this definition">¶</a></dt>
+<dd><p>Add a parameter to the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – name of the folder containing the CSV file</p></li>
+<li><p><strong>name</strong> – name of the CSV file</p></li>
+<li><p><strong>houseName</strong> – name of the house containing the CSV file</p></li>
+<li><p><strong>path</strong> – path to the CSV file</p></li>
+<li><p><strong>var</strong> – columns of interest of the CSV file</p></li>
+<li><p><strong>idx</strong> – index of the parameter in the LineList</p></li>
+<li><p><strong>negative</strong> – if the values of the parameter are to be subtracted when creating the line</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList.getParams">
+<span class="sig-name descname"><span class="pre">getParams</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamList.getParams" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of all the ParamWidgets</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList.hasChanged">
+<span class="sig-name descname"><span class="pre">hasChanged</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamList.hasChanged" title="Link to this definition">¶</a></dt>
+<dd><p>Signals that the list has changed</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList.nextIndex">
+<span class="sig-name descname"><span class="pre">nextIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamList.nextIndex" title="Link to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Retruns:</dt><dd><p>the index of the next parameter to add to the list/ the list’s length</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamList.removeParam">
+<span class="sig-name descname"><span class="pre">removeParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamList.removeParam" title="Link to this definition">¶</a></dt>
+<dd><p>Remove a parameter from the list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – index of the parameter on the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">ParamWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">house</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negative</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamWidget" title="Link to this definition">¶</a></dt>
+<dd><p>Widget to represent a parameter that defines a line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – name of the CSV</p></li>
+<li><p><strong>folder</strong> – name of folder containing the CSV</p></li>
+<li><p><strong>house</strong> – name of the house containing the CSV</p></li>
+<li><p><strong>path</strong> – path to the CSV</p></li>
+<li><p><strong>column</strong> – column of interest in the CSV</p></li>
+<li><p><strong>negative</strong> – if the values of the CSV are to be subtracted on the final line</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamWidget.changeSign">
+<span class="sig-name descname"><span class="pre">changeSign</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamWidget.changeSign" title="Link to this definition">¶</a></dt>
+<dd><p>Switches between + and - as to indicate if the values from this parameter are to be added or subtracted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamWidget.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamWidget.index" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>the index of the parameter in the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.ParamWidget.setSign">
+<span class="sig-name descname"><span class="pre">setSign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.ParamWidget.setSign" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the operation sign of the parameter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idx</strong> – index of the parameter in the LineList</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="GraphParamSelector.PopupCsvSelector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">GraphParamSelector.</span></span><span class="sig-name descname"><span class="pre">PopupCsvSelector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.PopupCsvSelector" title="Link to this definition">¶</a></dt>
+<dd><p>Window containing the CSV Selector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>paths</strong> – dictionary with relevant paths</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="GraphParamSelector.PopupCsvSelector.select">
+<span class="sig-name descname"><span class="pre">select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folderName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">house</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#GraphParamSelector.PopupCsvSelector.select" title="Link to this definition">¶</a></dt>
+<dd><p>Signal the selection of a CSV file and close the window</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folderName</strong> – folder containing the file</p></li>
+<li><p><strong>name</strong> – name of the file</p></li>
+<li><p><strong>house</strong> – house where the file is from (‘Community’ if oustide a house folder)</p></li>
+<li><p><strong>path</strong> – path to the CSV file</p></li>
+<li><p><strong>var</strong> – column of the CSV file to use</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-ProcsimRun">
+<dt class="sig sig-object py" id="ProcsimRun.InfoScreen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimRun.</span></span><span class="sig-name descname"><span class="pre">InfoScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.InfoScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Screen to show progress of simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> – upper text</p></li>
+<li><p><strong>text</strong> – lower text</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.InfoScreen.controlProgress">
+<span class="sig-name descname"><span class="pre">controlProgress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.InfoScreen.controlProgress" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the text on the info screen based on signals sent from ProcsimRun</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>code</strong> – code to tell which stage simulation is at</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.InfoScreen.setCancelled">
+<span class="sig-name descname"><span class="pre">setCancelled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.InfoScreen.setCancelled" title="Link to this definition">¶</a></dt>
+<dd><p>Signals the simulation should be cancelled, shows text confirming it will cancel as soon as possible</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.InfoScreen.setText">
+<span class="sig-name descname"><span class="pre">setText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.InfoScreen.setText" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>text</strong> – text to be shown</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.InfoScreen.setTitle">
+<span class="sig-name descname"><span class="pre">setTitle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.InfoScreen.setTitle" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the title</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>title</strong> – text to be shown</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ProcsimRun.</span></span><span class="sig-name descname"><span class="pre">ProcsimRun</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skipCg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localPV</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">days</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_seconds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output/test/second'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_minutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output/test/minute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_after_first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output/test/afteroptimization'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_after_second</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output/test/aftersecoptimization'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">community_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'data.json'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun" title="Link to this definition">¶</a></dt>
+<dd><p>Class to run PROCSIM</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>skipCg</strong> – whether to skip the Consumption Generator step</p></li>
+<li><p><strong>optimMethod</strong> – optimisation method to use (index from Settings.optimizationNames)</p></li>
+<li><p><strong>localPV</strong> – path to the CSV containing solar data (leave empty to use API)</p></li>
+<li><p><strong>days</strong> – number of days to simulate</p></li>
+<li><p><strong>path_steps_seconds</strong> – path of the consumption profiles generated by ANTGen (at 1 Hz)</p></li>
+<li><p><strong>path_steps_minutes</strong> – path of the resampled consumption profiles (at 1/60Hz)</p></li>
+<li><p><strong>path_steps_after_first</strong> – path of the consumption profiles after the 1st step of the optimization</p></li>
+<li><p><strong>path_steps_after_second</strong> – path of the consumption profiles after the 2nd step of the optimization</p></li>
+<li><p><strong>community_file</strong> – JSON file containing the community configuration</p></li>
+<li><p><strong>simulate</strong> – whether to run the simulate function</p></li>
+<li><p><strong>optimize</strong> – wheter to run the optimize function</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.cgExecute">
+<span class="sig-name descname"><span class="pre">cgExecute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">days</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_files_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">just_a_day</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.cgExecute" title="Link to this definition">¶</a></dt>
+<dd><p>Consumption Generator execute function without showing any graphs and added checks for cancellation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cg</strong> – Consumption Generator object in use</p>
+</dd>
+</dl>
+<p>days: number of the days to generate data (profiles)
+config_files_path: path/folder where there are the house configuration files (.conf)
+just_a_day: if true, only 1 day is considered, otherwise all the days are considered
+database_files: if true, converts the database files, otherwise convertes the community files (false should be used)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.cmExecute">
+<span class="sig-name descname"><span class="pre">cmExecute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.cmExecute" title="Link to this definition">¶</a></dt>
+<dd><p>Chooses how to execute the Community Manager based on the optimisation method in use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cm</strong> – Community Manager object in use</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.createTimeslotsFiles">
+<span class="sig-name descname"><span class="pre">createTimeslotsFiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">folder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.createTimeslotsFiles" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the timeslots file from a formatted dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tims</strong> – dictionary in format {“appliance_name”: [[start, end, day], …], …}</p></li>
+<li><p><strong>folder</strong> – folder containing the house folders into which the timeslots files will be created</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.createTimeslotsFilesOpt">
+<span class="sig-name descname"><span class="pre">createTimeslotsFilesOpt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noHouses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondOptim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.createTimeslotsFilesOpt" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the timeslots file from the data gathered in the optimisation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tims</strong> – placed_timeslots_array from the CommunityManager</p></li>
+<li><p><strong>noHouses</strong> – number of houses in the community</p></li>
+<li><p><strong>secondOptim</strong> – if these are the timeslots of a second optimisation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.createTimeslotsFilesSim">
+<span class="sig-name descname"><span class="pre">createTimeslotsFilesSim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noHouses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.createTimeslotsFilesSim" title="Link to this definition">¶</a></dt>
+<dd><p>Creates the timeslots file from the data gathered in the simulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tims</strong> – timeslots dictionary from the ConsumptionGenerator</p></li>
+<li><p><strong>noHouses</strong> – number of houses in the community</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.getCommunityManager">
+<span class="sig-name descname"><span class="pre">getCommunityManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optim_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_minutes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_after_first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_steps_after_second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.getCommunityManager" title="Link to this definition">¶</a></dt>
+<dd><p>Get the Community Manager based on the optimisation method in use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>optim_method</strong> – optimisation method</p></li>
+<li><p><strong>cg</strong> – Consumption Generator object in use</p></li>
+<li><p><strong>path_steps_minutes</strong> – path of the resampled consumption profiles (at 1/60Hz)</p></li>
+<li><p><strong>path_steps_after_first</strong> – path of the consumption profiles after the 1st step of the optimization</p></li>
+<li><p><strong>path_steps_after_second</strong> – path of the consumption profiles after the 2nd step of the optimization</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>appropriate Community Manager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.getPV">
+<span class="sig-name descname"><span class="pre">getPV</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.getPV" title="Link to this definition">¶</a></dt>
+<dd><p>Gets solar data from CSV or Smile based on specified local data path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>appropriate solar data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.getWind">
+<span class="sig-name descname"><span class="pre">getWind</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.getWind" title="Link to this definition">¶</a></dt>
+<dd><p>Gets wind data from Tomorrow (to be improved if more wind data sources are added)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>appropriate wind data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.optimize">
+<span class="sig-name descname"><span class="pre">optimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.optimize" title="Link to this definition">¶</a></dt>
+<dd><p>Optimises the community’s consumption.
+Uses PROCSIM’s Community Manager module (and subclasses).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tryexcept</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.run" title="Link to this definition">¶</a></dt>
+<dd><p>Run PROCSIM. If no option is specified does a full run</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ProcsimRun.ProcsimRun.simulate">
+<span class="sig-name descname"><span class="pre">simulate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ProcsimRun.ProcsimRun.simulate" title="Link to this definition">¶</a></dt>
+<dd><p>Simulates the community’s consumption.
+Using PROCSIM’s Consumption Generator, Renewable Energy Generator and Community Generator modules.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-Util">
+<dt class="sig sig-object py" id="Util.Util">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Util.</span></span><span class="sig-name descname"><span class="pre">Util</span></span><a class="headerlink" href="#Util.Util" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="Util.Util.daysString">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">daysString</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">days</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Util.Util.daysString" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>days</strong> – number of simulated days in string format</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The number of days with the string ‘day’ or ‘days’ (according to the number) in front</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Util.Util.fileName">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fileName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Util.Util.fileName" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – path to the desired file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>name of a file from a given path with no extension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Util.Util.infoFile">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">infoFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Util.Util.infoFile" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> – name or path to the desired file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>path to the .info file of the community</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Util.Util.loggedDays">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">loggedDays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Util.Util.loggedDays" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> – name or path to the desired file</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of the number of days (in string format) used in the file’s simulations</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="note-on-optimisation-methods">
+<span id="note-anchor"></span><h1>Note on optimisation methods<a class="headerlink" href="#note-on-optimisation-methods" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>By accessing Settings.Settings.optimizationNames() most of the application’s needs are met</p></li>
+<li><p>Buttons labels and other elements are dynamically created by reading the above tuple and using the names and indeces inside</p></li>
+<li><p>To add PROCSIM’s functionality to these elements ProcsimRun.ProcsimRun.cmExecute() must be updated to contain the procedure related to the correspondent method</p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">PROCSIM Running/Results Frontend</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Fábio Gomes.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,6 @@
+antgen==0.4.1
+matplotlib==3.7.2
+numpy==1.25.0
+pandas==1.5.0
+procsimulator
+PySide6==6.5.1.1
