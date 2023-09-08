@@ -7,6 +7,7 @@ PySide6==6.5.1.1
 
 sphinx==3.5.1
 sphinx_rtd_theme==1.0.0
+Jinja2<3.1
 binpacking==1.5.2
 netCDF4==1.6.1
 netcdf4-pydap==0.2.1
